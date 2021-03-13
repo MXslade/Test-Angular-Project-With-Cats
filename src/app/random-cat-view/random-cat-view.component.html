@@ -1,0 +1,8 @@
+<div class="random-cat-view-wrapper">
+  <button (click)="getNewCat()">Get New Cat</button>
+  <button (click)="addToFavorite()">Add To Favorite</button>
+
+  <div *ngIf="cat">
+    <img [src]="cat.url" [width]="cat.width" [height]="cat.height" />
+  </div>
+</div>
